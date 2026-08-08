@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, FileText, FolderLock, KeyRound, History, Radio, Settings as SettingsIcon } from 'lucide-react';
+import { Shield, Lock, FileText, FolderLock, KeyRound, History, Radio, Settings as SettingsIcon, Image } from 'lucide-react';
 
 interface SidebarProps {
   currentTab: string;
@@ -10,6 +10,7 @@ interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({ currentTab, onTabChange, onLock }) => {
   const navItems = [
     { id: 'text', label: 'Text Cipher', icon: FileText },
+    { id: 'stego', label: 'Steganography', icon: Image },
     { id: 'file', label: 'File Vault', icon: FolderLock },
     { id: 'channel', label: 'Key Channels', icon: Radio },
     { id: 'keys', label: 'Key Manager', icon: KeyRound },

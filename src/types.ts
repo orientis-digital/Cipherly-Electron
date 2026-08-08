@@ -36,7 +36,7 @@ export interface ChannelKey {
 export interface AuditLog {
   id: number;
   timestamp: string;
-  action: 'key_generate' | 'key_export' | 'key_import' | 'text_encrypt' | 'text_decrypt' | 'file_encrypt' | 'file_decrypt' | 'channel_create' | 'session_lock';
+  action: 'key_generate' | 'key_export' | 'key_import' | 'text_encrypt' | 'text_decrypt' | 'file_encrypt' | 'file_decrypt' | 'channel_create' | 'session_lock' | 'stego_embed' | 'stego_extract';
   details: string;
 }
 

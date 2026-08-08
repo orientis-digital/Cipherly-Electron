@@ -5,6 +5,7 @@ import { LoginView } from './screens/LoginView';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { TextView } from './screens/TextView';
+import { SteganographyView } from './screens/SteganographyView';
 import { FileView } from './screens/FileView';
 import { ChannelView } from './screens/ChannelView';
 import { KeyManagerView } from './screens/KeyManagerView';
@@ -66,6 +67,7 @@ export const App: React.FC = () => {
 
         <main className="flex-1 overflow-y-auto bg-dark-900">
           {currentTab === 'text' && <TextView />}
+          {currentTab === 'stego' && <SteganographyView />}
           {currentTab === 'file' && <FileView />}
           {currentTab === 'channel' && <ChannelView />}
           {currentTab === 'keys' && <KeyManagerView />}
