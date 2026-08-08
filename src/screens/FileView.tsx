@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FolderLock, File, Lock, Unlock, CheckCircle2, AlertCircle, HardDrive, RefreshCw } from 'lucide-react';
+import { FolderLock, Lock, Unlock, CheckCircle2, AlertCircle, HardDrive, RefreshCw } from 'lucide-react';
 import { store } from '../db/store';
 
 export const FileView: React.FC = () => {

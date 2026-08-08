@@ -5,6 +5,10 @@
   "description": "Cipherly Zero-Trust Encryption Suite",
   "author": "Orientis Digital <orientisdigital.official@gmail.com>",
   "homepage": "https://orientisdigital.com/cipherly",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orientis-digital/Cipherly-Electron.git"
+  },
   "type": "module",
   "main": "dist-electron/main.js",
   "scripts": {
@@ -28,16 +32,30 @@
     },
     "linux": {
       "target": [
-        "AppImage",
-        "deb",
-        "tar.gz"
+        {
+          "target": "AppImage",
+          "arch": ["x64"]
+        },
+        {
+          "target": "deb",
+          "arch": ["x64"]
+        },
+        {
+          "target": "tar.gz",
+          "arch": ["x64"]
+        }
       ],
       "category": "Utility"
     },
     "win": {
+      "signAndEditExecutable": false,
       "target": [
-        "nsis",
-        "zip"
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
       ]
     }
   },

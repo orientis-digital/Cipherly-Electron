@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, FileText, FolderLock, KeyRound, History, Radio, LogOut, Settings as SettingsIcon } from 'lucide-react';
+import { Shield, Lock, FileText, FolderLock, KeyRound, History, Radio, Settings as SettingsIcon } from 'lucide-react';
 
 interface SidebarProps {
   currentTab: string;

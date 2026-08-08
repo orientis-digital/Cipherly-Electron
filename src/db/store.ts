@@ -1,5 +1,5 @@
 import { User, EncryptionKey, Channel, ChannelKey, AuditLog, ChannelBundle } from '../types';
-import { generateRawKey, getFingerprint, generateSalt, encryptTextGCM, decryptTextGCM } from '../crypto/engine';
+import { generateRawKey, getFingerprint, generateSalt, encryptTextGCM } from '../crypto/engine';
 
 interface AppState {
   users: User[];

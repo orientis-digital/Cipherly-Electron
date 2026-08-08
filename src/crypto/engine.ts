@@ -124,7 +124,7 @@ export async function decryptTextGCM(cipherB64: string, keyB64: string): Promise
 
     const dec = new TextDecoder();
     return dec.decode(decryptedBuffer);
-  } catch (err: any) {
+  } catch {
     throw new Error('Decryption failed. Invalid key or corrupted payload.');
   }
 }

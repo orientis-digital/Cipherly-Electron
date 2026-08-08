@@ -250,14 +250,14 @@ case "$TARGET_PLATFORM" in
         npx electron-builder --win --x64
         ;;
     all)
-        log_info "Running electron-builder Linux targets..."
-        npx electron-builder --linux
+        log_info "Running electron-builder Linux targets (64-bit x64)..."
+        npx electron-builder --linux --x64
         log_info "Running electron-builder Windows targets (64-bit x64)..."
         npx electron-builder --win --x64
         ;;
     *)
-        log_info "Running electron-builder Linux targets (AppImage, deb, tar.gz)..."
-        npx electron-builder --linux
+        log_info "Running electron-builder Linux targets (64-bit x64 AppImage, deb, tar.gz)..."
+        npx electron-builder --linux --x64
         ;;
 esac
 

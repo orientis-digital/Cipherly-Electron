@@ -69,7 +69,7 @@ export const TextView: React.FC = () => {
               decryptedStr = await decryptTextGCM(inputText, k.keyB64);
               matchedKeyLabel = k.label;
               break;
-            } catch (e) {
+            } catch {
               // Ignore fallback failure
             }
           }

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Settings as SettingsIcon, Shield, Lock, Database, HardDrive, Bell, CheckCircle2, AlertCircle, RefreshCw, KeyRound, Download, Upload, Trash2 } from 'lucide-react';
+import { Shield, Lock, Database, CheckCircle2, AlertCircle, Download } from 'lucide-react';
 import { store } from '../db/store';
 
 export const SettingsView: React.FC = () => {
   const [autoLockTimeout, setAutoLockTimeout] = useState<string>('15');
-  const [accentColor, setAccentColor] = useState<string>('amber');
   const [showChangePassModal, setShowChangePassModal] = useState<boolean>(false);
   const [oldPassword, setOldPassword] = useState<string>('');
   const [newPassword, setNewPassword] = useState<string>('');

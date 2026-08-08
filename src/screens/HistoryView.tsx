@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { History, Trash2, Search, Filter, ShieldCheck } from 'lucide-react';
+import { Trash2, Search, Filter } from 'lucide-react';
 import { store } from '../db/store';
 import { AuditLog } from '../types';
 

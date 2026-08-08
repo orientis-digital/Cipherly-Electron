@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { KeyRound, Plus, QrCode, CheckCircle2, ShieldAlert, Sparkles, Copy } from 'lucide-react';
+import { KeyRound, QrCode, Sparkles } from 'lucide-react';
 import { store } from '../db/store';
 import { EncryptionKey } from '../types';
 import { QRCodeModal } from '../components/QRCodeModal';

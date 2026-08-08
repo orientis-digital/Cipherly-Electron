@@ -15,12 +15,15 @@ if (!fs.existsSync(DATA_DIR)) {
 }
 
 function createWindow() {
+  const currentAppVersion = app.getVersion() || '0.0.1';
+  const windowTitle = `Cipherly by Orientis Digital - v${currentAppVersion}`;
+
   mainWindow = new BrowserWindow({
     width: 1100,
     height: 750,
     minWidth: 900,
     minHeight: 600,
-    title: 'Cipherly',
+    title: windowTitle,
     backgroundColor: '#090b10',
     titleBarStyle: 'hidden',
     titleBarOverlay: {
@@ -36,6 +39,11 @@ function createWindow() {
       contextIsolation: true,
       sandbox: false,
     },
+  });
+
+  // Prevent HTML document.title from overriding Electron window title
+  mainWindow.on('page-title-updated', (event) => {
+    event.preventDefault();
   });
 
   if (process.env.VITE_DEV_SERVER_URL) {

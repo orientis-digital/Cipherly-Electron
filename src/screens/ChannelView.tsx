@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Radio, Plus, QrCode, Download, Upload, Key, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Radio, Plus, QrCode, Upload, Key, CheckCircle2, AlertCircle } from 'lucide-react';
 import { store } from '../db/store';
 import { Channel, ChannelKey } from '../types';
 import { QRCodeModal } from '../components/QRCodeModal';
