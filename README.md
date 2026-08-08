@@ -3,7 +3,7 @@
 [![Security](https://img.shields.io/badge/Security-Zero--Trust-brightgreen)](#cryptographic-architecture)
 [![Encryption](https://img.shields.io/badge/Encryption-AES--256--GCM%20%7C%20PBKDF2-blue)](#cryptographic-architecture)
 [![Platform](https://img.shields.io/badge/Platform-Electron%20%7C%20Linux%20%7C%20Windows-orange)](#building--packaging)
-[![License](https://img.shields.io/badge/License-Proprietary-red)](#license--attribution)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license--attribution)
 
 > **Zero-Trust Client-Side Encryption Suite** — Desktop application built with React 18, Vite, TypeScript, Web Crypto API, and packaged via Electron. Developed by **Orientis Digital**.
 
@@ -83,4 +83,4 @@ chmod +x ./deploy.sh
 
 ## 📄 License & Attribution
 
-Copyright © 2026 **Orientis Digital**. All rights reserved.
+Licensed under the [MIT License](LICENSE). Copyright © 2026 **Orientis Digital**. All rights reserved.

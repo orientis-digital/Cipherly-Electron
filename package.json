@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Cipherly Zero-Trust Encryption Suite",
+  "license": "MIT",
   "author": "Orientis Digital <orientisdigital.official@gmail.com>",
   "homepage": "https://orientisdigital.com/cipherly",
   "repository": {
